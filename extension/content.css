@@ -1,47 +1,7 @@
-/* revert to previous better GitHub fonts */
-body,
-.markdown-body,
-.tooltipped::after {
-	font-family: Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol' !important;
-}
-body {
-	font-size: 13px !important;
-	line-height: 1.4 !important;
-}
-
-.subscribe-feed {
-	display: none !important;
-}
-
 /* allow for absolute positioning relative to the dashboard */
 #dashboard,
 .orgpage > .container {
 	position: relative !important;
-}
-
-#dashboard .new-repo {
-	display: none !important;
-}
-
-/* remove "Repositories you contribute to" dashboard sidebar box */
-.dashboard-sidebar > .boxed-group[role="navigation"]:not(.repos) {
-	display: none !important;
-}
-
-/* remove the toolbar from the right repo box on the dashboard */
-.dashboard-sidebar .user-repos > h3,
-.dashboard-sidebar .user-repos > .boxed-group-action {
-	display: none !important;
-}
-.dashboard-sidebar .user-repos .boxed-group-inner {
-	border-radius: 3px !important;
-}
-.dashboard-sidebar .user-repos .filter-repos {
-	border-top-left-radius: 3px !important;
-	border-top-right-radius: 3px !important;
-}
-.dashboard-sidebar .user-repos .repo-icon {
-	opacity: 0.6 !important;
 }
 
 /* remove border between dashboard news items */
@@ -49,88 +9,8 @@ body {
 	border: 0 !important;
 }
 
-/* remove newsfeed tips */
-.news form + .text-center {
-	display: none !important;
-}
-
-/* remove tooltips */
-.tooltipped:not(.reaction-summary-item,.avatar-group-item,.avatar):before,
-.tooltipped:not(.reaction-summary-item,.avatar-group-item,.avatar):after {
-	display: none !important;
-}
-
-/* fade out the file icons */
-.file-wrap .files .octicon {
-	opacity: 0.6;
-}
-
-/* remove annoying hover in the repo file list */
-.file-wrap .files .navigation-focus td {
-	background: none !important;
-}
-
-#readme > h3 {
-	display: none !important;
-}
-
-#readme .markdown-body {
-	border-radius: 3px !important;
-	border-radius: 3px !important;
-}
-
-.paginate-protip {
-	display: none !important;
-}
-
-.site-footer {
-	visibility: hidden;
-}
-
-/* remove useless message on the right side of the PR merge box */
-.alt-merge-options {
-	display: none !important;
-}
-
-/* remove top buttons on comment box */
-.timeline-comment-wrapper .tabnav-extra, .inline-comment-form-container .tabnav-extra {
-	display: none !important;
-}
-
-/* remove commentbox toolbar */
-.toolbar-group {
-    display: none;
-    margin-left: 0 !important;
-}
-.toolbar-group:last-child {
-    display: inline-block;
-}
-.toolbar-group .toolbar-item {
-    display: none;
-}
-.toolbar-group .js-saved-reply-container {
-	display: block;
-}
-.toolbar-commenting {
-	margin-top: 4px;
-}
-
-/* remove upload message on comment box */
-.write-content .drag-and-drop {
-	display: none !important;
-}
-.upload-enabled textarea {
-	border-bottom: 1px solid #ccc !important;
-	border-radius: 3px !important;
-}
-
 /* remove random protip at the bottom of the page */
 .protip {
-	display: none !important;
-}
-
-/* remove message under the `Unsubscribe` button */
-.sidebar-notifications .reason {
 	display: none !important;
 }
 
@@ -180,21 +60,6 @@ body {
 .commit-ref.unlinked:hover,
 .commit-ref.unlinked:hover span {
 	text-decoration: none !important;
-}
-
-/* remove the "new feature" notification box */
-.js-notice {
-	display: none !important;
-}
-
-/* remove useless tip in the organization news feed */
-#dashboard .alert.git_hub {
-	display: none !important;
-}
-
-/* remove Upload files button; drag and drop is available anyway */
-.file-navigation a[href*="/upload/"] {
-	display: none !important;
 }
 
 /* style for edit README button */
@@ -287,30 +152,6 @@ we will add it back on for the simple news alerts we decide to show
 	display: none;
 }
 
-/* increase visibility of news item when someone stars a repo */
-.watch_started.simple .body {
-	min-height: 55px;
-}
-
-svg.octicon.octicon-star.dashboard-event-icon {
-	height: 32px !important;
-	width: 28px !important;
-}
-
-.watch_started .time {
-	position: absolute;
-	top: 10px;
-	left: 45px;
-}
-
-.watch_started.simple.alert .simple .title {
-	position: absolute;
-	top: 26px;
-	font-size: 14px !important;
-	font-weight: bold;
-	color: inherit !important;
-}
-
 /* decrease font-size on commit details so our custom patch and diff links fit */
 .commit .sha-block {
 	margin-left: 7px !important;
@@ -350,27 +191,6 @@ svg.octicon.octicon-star.dashboard-event-icon {
 	height: 16px !important;
 }
 
-/* Hide current filename in PR header when not sticky (top of page) */
-.js-sticky-offset-scroll:not(.is-stuck) .diff-toolbar-filename {
-	display: none;
-}
-
-.js-sticky-offset-scroll.is-stuck .subset-files-tab,
-.js-sticky-offset-scroll.is-stuck .stale-files-tab {
-	width: 120%;
-	text-align: center;
-	margin-top: 5px;
-	margin-left: -11%;
-}
-
-.diff-toolbar-filename {
-	font-weight: bold;
-}
-
-.diff-toolbar-filename.filename-width-check {
-	visibility: hidden;
-	position: absolute;
-}
 
 /* limit width of commit title and description inputs to 50/80 chars */
 #commit-summary-input, #commit-description-textarea {
