@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Author</key>
+	<string>Sindre Sorhus</string>
+	<key>Builder Version</key>
+	<string>12602.2.7</string>
+	<key>CFBundleDisplayName</key>
+	<string>Refined Github</string>
+	<key>CFBundleIdentifier</key>
+	<string>me.sergioramos.refined-github</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.9.1</string>
+	<key>CFBundleVersion</key>
+	<string>1.9.1</string>
+	<key>Content</key>
+	<dict>
+		<key>Scripts</key>
+		<dict>
+			<key>Start</key>
+			<array>
+				<string>extension/vendor/jquery.slim.min.js</string>
+				<string>extension/vendor/gh-injection.js</string>
+				<string>extension/util.js</string>
+				<string>extension/page-detect.js</string>
+				<string>extension/diffheader.js</string>
+				<string>extension/reactions-avatars.js</string>
+				<string>extension/copy-file.js</string>
+				<string>extension/copy-on-y.js</string>
+				<string>extension/show-names.js</string>
+				<string>extension/content.js</string>
+				<string>extension/add-blame-parent-links.js</string>
+				<string>extension/mark-unread.js</string>
+			</array>
+		</dict>
+		<key>Stylesheets</key>
+		<array>
+			<string>extension/content.css</string>
+			<string>extension/custom.css</string>
+		</array>
+	</dict>
+	<key>Description</key>
+	<string>Simplifies the GitHub interface and adds useful features</string>
+	<key>DeveloperIdentifier</key>
+	<string>NM7D74ULX9</string>
+	<key>ExtensionInfoDictionaryVersion</key>
+	<string>1.0</string>
+	<key>Permissions</key>
+	<dict>
+		<key>Website Access</key>
+		<dict>
+			<key>Allowed Domains</key>
+			<array>
+				<string>*.github.com</string>
+			</array>
+			<key>Include Secure Pages</key>
+			<true/>
+			<key>Level</key>
+			<string>Some</string>
+		</dict>
+	</dict>
+	<key>Website</key>
+	<string>https://github.com/ramitos/refined-github.safariextension</string>
+</dict>
+</plist>

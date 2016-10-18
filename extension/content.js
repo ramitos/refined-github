@@ -70,7 +70,7 @@ function addReleasesTab() {
 	if (!hasReleases) {
 		$repoNav.append($releasesTab);
 
-		cacheReleasesCount();
+		// cacheReleasesCount();
 	}
 }
 

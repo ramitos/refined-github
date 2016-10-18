@@ -6,7 +6,7 @@ window.showRealNames = () => {
 	};
 
 	const updateCachedUsers = users => {
-		chrome.storage.local.set({[storageKey]: users});
+		// chrome.storage.local.set({[storageKey]: users});
 	};
 
 	const addUsersName = (user, name) => {
